@@ -1,7 +1,7 @@
 <template>
   <NavBar />
   <div>
-    <h1>Welcome to BingX API Dashboard</h1>
+    <h1>Welcome to BingX API Dashboard!</h1>
   </div>
 </template>
 
