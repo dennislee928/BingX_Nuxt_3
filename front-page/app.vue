@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <Nuxt />
 </template>
-//
+
+<script>
+export default {
+  name: "App",
+};
+</script>
