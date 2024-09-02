@@ -86,9 +86,6 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
-      "pinia": [
-        "../../../../node_modules/pinia/dist/pinia"
-      ],
       "#vue-router": [
         "../node_modules/vue-router"
       ],
@@ -140,22 +137,17 @@
     "./nuxt.d.ts",
     "../.config/nuxt.*",
     "../**/*",
-    "../../../../node_modules/@pinia/nuxt/runtime",
-    "../../../../node_modules/@pinia/nuxt/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     "../node_modules/@nuxt/telemetry/dist/runtime",
-    "..",
-    "../../../../node_modules/pinia/dist/pinia"
+    ".."
   ],
   "exclude": [
     "../dist",
     "../node_modules",
     "../../node_modules",
     "../node_modules/nuxt/node_modules",
-    "../../../../node_modules/@pinia/nuxt/runtime/server",
-    "../../../../node_modules/@pinia/nuxt/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
