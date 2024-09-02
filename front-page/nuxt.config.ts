@@ -1,19 +1,17 @@
-import { defineNuxtConfig } from "@nuxt/bridge";
+import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxtjs/axios",
-    "@nuxtjs/proxy",
-    [
-      "@nuxtjs/axios",
-      {
-        baseURL: "https://open-api.bingx.com", // 設置你的 API 基本 URL
-        proxyHeaders: true,
-        credentials: false,
-        proxy: true, // 啟用 axios 代理
-      },
-    ],
-  ],
-  // 移除 proxy 設定
+  modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
+  axios: {
+    proxyHeaders: true,
+    credentials: false,
+  },
+  proxy: {
+    "/api/": {
+      target: "https://open-api.bingx.com",
+      pathRewrite: { "^/api/": "" },
+      changeOrigin: true,
+    },
+  },
   plugins: ["~/plugins/axios.js"],
 });
