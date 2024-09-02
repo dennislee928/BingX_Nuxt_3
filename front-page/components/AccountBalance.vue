@@ -19,6 +19,7 @@ export default {
     };
   },
   async mounted() {
+    console.log("mounted hook called"); // 調試信息
     const API_KEY =
       "PylNZbaPIpjPHsGoZ7hCVSHr5yPB8sUWttko3kyuBDfuNEfsV6FH1LLvq9OXdxV2CjoSeeZ0T4fCa59BDw";
     const API_SECRET =
@@ -44,14 +45,16 @@ export default {
     )}&signature=${sign}`;
 
     try {
+      console.log("Sending request to:", url); // 調試信息
       const response = await axios.get(url, {
         headers: {
           "X-BX-APIKEY": API_KEY,
         },
       });
+      console.log("Response received:", response); // 調試信息
       this.balance = response.data;
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching balance:", error);
     }
   },
   methods: {
