@@ -25,9 +25,13 @@ jobs:
         with:
           node-version: '18'  # Use a stable LTS version of Node.js
 
+      - name: Clear node_modules and package-lock.json
+        run: |
+          rm -rf node_modules
+          rm -f package-lock.json
+
       - name: Install dependencies
-        working-directory: ./front-page
-        run: npm install 
+        run: npm ci
 
       - name: Build
         env:
