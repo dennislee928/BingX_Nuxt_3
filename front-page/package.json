@@ -10,8 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.0",
-    "@nuxt/schema": "^3.17.5",
+
+    "@nuxt/kit": "^3.17.5",
+    "@nuxt/schema": "^3.13.0",
+
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/proxy": "^2.1.0",
     "crypto-js": "^4.2.0",
