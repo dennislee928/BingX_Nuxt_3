@@ -17,6 +17,6 @@
     "crypto-js": "^4.2.0",
     "nuxt": "^4.1.0",
     "signal-exit": "^4.1.0",
-    "vue": "latest"
+    "vue": "^3.5.25"
   }
 }
