@@ -18,5 +18,8 @@
     "nuxt": "^3.20.0",
     "signal-exit": "^4.1.0",
     "vue": "^3.5.25"
+  },
+  "overrides": {
+    "seroval": "^1.6.8"
   }
 }
