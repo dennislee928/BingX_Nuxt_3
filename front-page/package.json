@@ -41,6 +41,7 @@
     "picomatch": "^4.0.4",
     "postcss": "^8.5.23",
     "ws": "^8.21.0",
-    "@vue/server-renderer": "^3.5.42"
+    "@vue/server-renderer": "^3.5.42",
+    "defu": "^6.1.5"
   }
 }
