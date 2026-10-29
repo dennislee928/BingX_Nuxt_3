@@ -25,6 +25,7 @@
     "shell-quote": "^1.9.0",
     "@nuxt/devtools": "^3.3.1",
     "@simple-git/argv-parser": "^2.0.1",
-    "axios": "^0.33.0"
+    "axios": "^0.33.0",
+    "devalue": "^5.9.3"
   }
 }
