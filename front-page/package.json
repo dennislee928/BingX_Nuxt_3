@@ -33,6 +33,7 @@
     "h3": "^1.15.9",
     "http-proxy-middleware": "^2.0.10",
     "launch-editor": "^2.14.2",
-    "minimatch": "^9.0.7"
+    "minimatch": "^9.0.7",
+    "nanoid": "^5.1.16"
   }
 }
